@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 int main(){
@@ -14,7 +15,7 @@ int main(){
     while(n>0){
         int ld = n%10;
         n /= 10;
-        sum += ld*ld*ld;
+        sum += pow(ld,3);
     }
     if(sum == a){
         cout<<a<<" is a Armstrong Number";
